@@ -14,7 +14,7 @@ var do_rect = true
 
 var clear = function clr_canvas() {
     context.fillStyle = "#ffffff"
-    context.fillRect(0, 0, c.clientWidth, c.clientHeight)
+    context.fillRect(0, 0, c.width, c.height)
     return true
 }
 
@@ -27,7 +27,7 @@ var rect = function make_rect(x, y) {
 
 var dot = function mk_dt(x, y) {
     // console.log(col)
-    context.fillStyle = "#000000"
+    context.fillStyle = "#0000ff"
     console.log("making ellipse")
     context.beginPath()
     context.ellipse(x, y, 5, 5, 360, 0, 360)
