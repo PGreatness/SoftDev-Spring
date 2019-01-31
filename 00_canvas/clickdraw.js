@@ -1,7 +1,8 @@
 /* 
 Ahnaf Hasan
-Period 6
-1/30/19
+SoftDev2 pd06
+K#00 -- I See a Red Door...
+2019-1-30
 */
 
 var c = document.getElementById('slate')
