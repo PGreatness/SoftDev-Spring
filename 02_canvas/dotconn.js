@@ -1,3 +1,10 @@
+/*
+StuyNaught - Daniel Gelfand and Ahnaf Hasan
+SoftDev2 pd6
+K#02 -- Connecting the Dots
+2019-02-04 M
+*/
+
 var canvas = document.getElementById('playground')
 var ctx = canvas.getContext('2d')
 
