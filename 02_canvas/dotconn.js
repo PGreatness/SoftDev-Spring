@@ -31,7 +31,7 @@ var dot = function make_dot(x, y) {
 
 var cls = function c() {
     ctx.fillStyle = "#ffffff"
-    ctx.fillRect(0, 0, canvas.width, canvas.height)
+    ctx.fillRect(0, 0, canvas.clientWidth, canvas.clientHeight)
     prev_Pos = []
     return true
 }
