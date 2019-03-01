@@ -1,7 +1,9 @@
 '''
-WIP, error in connection. may not work
+GoodQuestion -- Roster: Ahnaf Hasan and Britni Canale
+SoftDev2 pd06
+K06 -- Yummy Mongo Py
+2019-02-28
 '''
-
 import pymongo as m
 
 SERVER_ADDR = "206.189.75.99"
@@ -10,28 +12,45 @@ db = client.test
 
 restaurants = db.restaurants
 
-bronxRestaurants = restaurants.find(
-    {
-        "borough":"Bronx"
-    }
-)
+def borough(borough):
+    bronxRestaurants = restaurants.find(
+        {
+            "borough": borough
+        }
+    )
+    for doc in bronxRestaurants:
+        print(doc)
 
-zipRestaurants = restaurants.find(
-    {
-        "zipcode":"11223"
-    }
-)
+def zipcode(code):
+    zipRestaurants = restaurants.find(
+        {
+            "zipcode": code
+        }
+    )
+    for doc in zipRestaurants:
+        print(doc)
 
-zipARestaurants = restaurants.find(
-    {
-        "zipcode":"11223",
-        "grade":"A"
-    }
-)
+def gradezip(zipCode, grade):
+    zipARestaurants = restaurants.find(
+        {
+            "zipcode":zipCode,
+            "grade":grade
+        }
+    )
+    for doc in zipARestaurants:
+        print(doc)
 
-zipLssRestaurants = restaurants.find(
-    {
-        "zipcode":"11223",
-        "grade": {$lt:400}
-    }
-)
+def gradelesszip(grade, zipCode):
+    zipLssRestaurants = restaurants.find(
+        {
+            "zipcode": zipCode,
+            "grade": {"$lt":grade}
+        }
+    )
+    for doc in zipLssRestaurants:
+        print(doc)
+
+# borough("Manhattan")
+# zipcode("11234")
+# gradezip("11012", "B")
+gradelesszip("A", "12311")
