@@ -68,9 +68,8 @@ def distance(latOne, longOne, latTwo, longTwo):
     return distance
 
 borough("Queens")
-zipcode("12311")
+zipcode("10282")
 zipgoodgrade("11413", "A")
 zipbadgrade("11231", "B")
 # distance(0, 0, 25, 25)
 distanceFrom(40.7178, -74.0139, 0.5)
-#zipcode("10282")
