@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Page Title</title>
+</head>
+<body>
+    <table>
+        {% for item in res %}
+            <tr></tr>
+            <td>Year</td>
+            <td>{{item['year']}}</td>
+            <tr></tr>
+            <td>Name</td>
+            {% for dic in item['laureates'] %}
+                <td>{{dic['firstname']}} {{dic['surname']}}: {{dic['motivation']}},</td>
+            {% endfor %}
+        {% endfor %}
+    </table>
+</body>
+</html>
