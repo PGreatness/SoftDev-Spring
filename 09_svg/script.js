@@ -4,7 +4,8 @@
 * K09 -- Connecting the Dots
 * 2019-03-12
 */
-var pic = document.getElementById('svgimagevar cls = document.getElementById('clear')
+var pic = document.getElementById('svgimage')
+var cls = document.getElementById('clear')
 var last_dot = []
 
 var make_dot = function(e) {
