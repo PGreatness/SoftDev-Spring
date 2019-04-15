@@ -102,7 +102,7 @@ def forComp6(num):
 
 def listComp6(num):
     if num < 2:
-        return 1
+        return [1]
     return [ x for x in range(2, num) if num % x == 0 ]
 
 num = 100
