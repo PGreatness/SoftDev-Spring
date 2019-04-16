@@ -10,7 +10,7 @@ def triples(end_range=2):
     They are all ints for range so this has to
     produce Pythagorean Triples
     """
-    return [(a, b, c) for a in range(2, end_range) for b in range(end_range) for c in range(end_range) if a * a + b * b == c * c ]
+    return [(a, b, c) for a in range(2, end_range) for b in range(end_range) for c in range(end_range) if a * a + b * b == c * c and a is not 0 and b is not 0 and c is not 0]
 
 def quickHelp(data, start, dupes):
     """
