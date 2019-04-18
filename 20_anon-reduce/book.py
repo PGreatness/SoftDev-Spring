@@ -47,7 +47,6 @@ def reducedCommon(file=''):
     f = open(file, 'r', encoding='utf-8')
     lines = ' '.join([line for line in f])
     words = [line.strip() for line in lines.split(' ')]
-    words = [''.repl for x in words if any((c in punctuation) for c in x)]
     largest = ('', 0)
     done = []
     for item in words:
