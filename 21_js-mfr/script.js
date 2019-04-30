@@ -1,3 +1,10 @@
+/**
+Ahnaf Hasan
+SoftDev2 pd06
+K21 -- Onions, Bell Peppers, and Celery, Oh My!
+2019-04-30
+*/
+
 /** @type {[{}]}*/
 var data = dat
 
