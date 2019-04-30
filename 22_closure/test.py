@@ -1,4 +1,11 @@
 '''
+Ahnaf Hasan
+SoftDev2 pd06
+K22 -- Closure
+2019-04-30
+'''
+
+'''
 def inc(x):
     return x + 1
 
