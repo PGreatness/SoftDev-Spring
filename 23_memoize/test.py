@@ -35,7 +35,7 @@ def fib(n):
 print(fib(1)) # 1
 print(fib(2)) # 1
 print(fib(3)) # 2
-print(fib(4)) # 3 
+print(fib(4)) # 3
 print(fib(5)) # 5
 print(fib(6)) # 8
 print(fib(40)) # some ridiculously large number
